@@ -31,6 +31,7 @@ choices.forEach((choice)=>{
 
 const drawgame = ()=>{console.log("game was draw")
   msg.innerText = "game was drawwww";
+  msg.style.backgroundColor="blue"
 }
 
 const userscorepara= document.querySelector("#user-score")
