@@ -15,7 +15,8 @@ line-height: 100%;}
     align-items: center;
     margin-top: 8%;
     gap:7%;
-         height:80%;
+    height:80%;
+         justify-content:space-evenly;
 }
 .choice:hover{cursor: pointer;
     border:3px solid black;
