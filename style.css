@@ -60,12 +60,6 @@ position: absolute;}
     height: 80px;
   }
 
-  .score-board {
-    flex-direction: column;
-    font-size: 3vh;
-    gap: 1rem;
-  }
-
   .msg-container {
     width: 90%;
     margin-left: 5%;
