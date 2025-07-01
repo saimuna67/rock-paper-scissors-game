@@ -11,19 +11,20 @@ height:100% ;
 line-height: 100%;}
 
 .choices{display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap:wrap;
     margin-top: 8%;
     gap:7%;
     height:80%;
-         justify-content:space-evenly;
+    justify-content:space-evenly;
 }
 .choice:hover{cursor: pointer;
     border:3px solid black;
 }
 .choice{height: 20vh;
-width: 20vw;
+width: 25vw;
+        max-width:120px;
+        min-width:80px;
  background-size: cover;
  border: 3px solid transparent;
  border-radius: 50%;
@@ -52,4 +53,4 @@ height:7vh;
 width: 40%;
 border-radius: 1rem;
 margin-left: 28%;
-positon: absolute;}
+position: absolute;}
