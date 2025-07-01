@@ -13,6 +13,7 @@ line-height: 100%;}
 .choices{display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap:wrap;
     margin-top: 8%;
     gap:7%;
     height:80%;
