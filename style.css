@@ -7,28 +7,28 @@ body{background-color: antiquewhite;
 }
 h1{background-color: rgb(16, 8, 44);
 color: rgb(253, 245, 246);
-height:5rem ;
-line-height: 5rem;}
+height:100% ;
+line-height: 100%;}
 
 .choices{display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 8%;
-    gap:3rem;
+    gap:7%;
 }
 .choice:hover{cursor: pointer;
     border:3px solid black;
 }
-.choice{height: 30vh;
-width: 30vh;
+.choice{height: 40vh;
+width: 20vw;
  background-size: cover;
  border: 3px solid transparent;
  border-radius: 50%;
 }
 
 
-img{height: 30vh;
-width: 30vh; border-radius: 50%;
+img{height: 100%;
+width: 100%; border-radius: 50%;
 object-fit: cover;}
 
 .score-board{display: flex;
