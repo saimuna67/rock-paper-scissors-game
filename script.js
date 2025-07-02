@@ -16,8 +16,8 @@ const playgame = (userchoice)=>{
   if(userchoice===compchoice){drawgame();}
   else {let userwin=true;
            if(userchoice==="rock"){userwin= compchoice==="paper"? false:true; }
-             else if(userchoice==="paper"){userwin= compchoice==="scissors"? false:true;}
-           else 
+             else if(userchoice==="paper"){userwin= compchoice==="scissor"? false:true;}
+           else (usercoice==="scissor")
            { userwin= compchoice==="rock"? false:true ; }
    showwinner(userwin ,userchoice,compchoice); }
 }
