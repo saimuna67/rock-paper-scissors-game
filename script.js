@@ -9,14 +9,12 @@ const randomidx= Math.floor(Math.random()*3);
  return options [randomidx];}
 
 const playgame = (userchoice)=>{
-  console.log("user choice=",userchoice);
   const compchoice = gencompchoice ();
-  console.log("comp choice=",compchoice);
 
   if(userchoice===compchoice){drawgame();}
   else {let userwin=true;
-           if(userchoice==="rock"){userwin= compchoice==="paper"? false:true; }
-             else if(userchoice==="paper"){userwin= compchoice==="scissor"? false:true;}
+           if(userchoice==="rock"){userwin=  compchoice==="paper"? false:true; }
+             else if(userchoice==="paper"){userwin=  compchoice==="scissor"? false:true;}
            else 
            { userwin= compchoice==="rock"? false:true ; }
    showwinner(userwin ,userchoice,compchoice); }
