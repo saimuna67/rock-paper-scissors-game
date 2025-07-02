@@ -2,6 +2,9 @@ let userScore = 0;
 let compScore = 0;
 
 const choices = document.querySelectorAll(".choice");
+const msg= document.querySelector("#msg");
+const userscorepara= document.querySelector("#user-score")
+const compscorepara= document.querySelector("#computer-score")
 
 const gencompchoice = ()=>{
 const options = ["rock","paper","scissor"];
@@ -21,19 +24,17 @@ const playgame = (userchoice)=>{
 }
 
 choices.forEach((choice)=>{
-  const userchoice = choice.getAttribute ("id")
   choice.addEventListener("click",()=>{
+  const userchoice = choice.getAttribute ("id")
   playgame(userchoice);
   })
 });
 
-const drawgame = ()=>{console.log("game was draw")
+const drawgame = ()=>{
   msg.innerText = "game was drawwww";
   msg.style.backgroundColor="blue"
 }
 
-const userscorepara= document.querySelector("#user-score")
-const compscorepara= document.querySelector("#computer-score")
 
 const showwinner= (userwin, userchoice, compchoice) => {
   if(userwin){
@@ -43,13 +44,9 @@ const showwinner= (userwin, userchoice, compchoice) => {
     userscorepara.innerText=userScore
   
   } 
-  else{console.log("computerwin")
-     compScore++ ;
-    msg.innerText =`computer win ${compchoice} beats your ${userchoice}`;
+  else{ compScore++ ;
+    msg.innerText =`computer win. ${compchoice} beats your ${userchoice}`;
     msg.style.backgroundColor="red";
     compscorepara.innerText=compScore
   }
 }
-
-const msg= document.querySelector("#msg");
-
